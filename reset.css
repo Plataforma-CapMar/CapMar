@@ -19,4 +19,11 @@
     font-family: var(--font-family-primary);
     font-size: x-large;
 }
- 
+input{
+    all: unset;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 350px;
+}

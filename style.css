@@ -10,7 +10,7 @@
     background-color: white;
 
     width: 100vw;
-    height: 100px;
+    height: 70px;
 }
 #logo-container{
     display: flex;
@@ -70,6 +70,7 @@
     height: 80%;
     width: 50%;
 }
+
 .info-area-container:first-child{
     position: relative;
     left: 100px;
@@ -77,10 +78,6 @@
 .info-area-container:last-child{
     position: relative;
     left: 100px;
-}
-.content-info-container > article:hover{
-    opacity: 0.8;
-    scale: 1.1;
 }
 
 
@@ -91,6 +88,7 @@
     
 }
 .info-title{
+    
     font-size: xx-large;
     color: var(--color-primary-blue);
     
@@ -101,6 +99,7 @@
     color: white;
 }
 
+
 /* SEGUNDA SESSÃO */
 
 #examples{
@@ -110,7 +109,19 @@
 }
 
 .card-home-container{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+    border-radius: 6%;
     width: 500px;
+    background-color: brown;
+    height: 60%;
+    border: black solid;
+}
+
+.card-title-contaier{
+    
 }
 
 .description-text{
@@ -125,16 +136,17 @@
 }
 .form-container{
     background-color: #866d0d;
+    width: 60%;
+    height: 60%;
     border-radius: 20px;
-    width: 55vw;
-    height: 50vh;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
-    "p cap"
-    "a cap"
-    "b cap"
-    "c cap"
-    
+    "grid-title-contact grid-title-contact"
+    "grid-name grid-img-contact"
+    "grid-email grid-img-contact"
+    "grid-phone grid-phone" 
                    
 }
 
@@ -156,33 +168,33 @@
     width: 350px;
 }
 
-#p-contact{
-    grid-area: p;
-    font-size: 64px;
+#title-contact{
+    grid-area: grid-title-contact;
+    font-size: 60px;
     margin: 15px;
 }
 
 #name{
-    grid-area: a;
+    grid-area: grid-name;
 
 }
 
 #email{
-    grid-area: b;
+    grid-area: grid-email;
 }
 
-#telefone{
-    grid-area: c;
+#phone{
+    grid-area: grid-phone;
 }
 
-#img-cap{
+#img-contact{
     align-content: center;
-    grid-area:  cap;
+    grid-area:  grid-img-contact;
 
 }
 
-#img-cap > img{
-    width: 30vw;
+#img-contact > img{
+    width: 80%;
 }
 
 
@@ -203,6 +215,6 @@
     align-items: center;
     justify-content: space-around;
 
-    height: 25vh;
+    height: 20vh;
 }
 
