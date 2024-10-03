@@ -66,7 +66,6 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    
     height: 80%;
     width: 50%;
 }
@@ -104,19 +103,20 @@
 
 #examples{
     background-color: var(--color-primary-blue);
-    /* background-color: #57b8ff; */
     padding: 50px;
+    flex-flow: wrap;
+    gap: 15px;
 }
 
 .card-home-container{
     display: flex;
     align-items: center;
-    gap: 80px;
+    justify-content: space-around;
     flex-direction: column;
     border-radius: 6%;
     width: 500px;
+    height: 40%;
     background-color: brown;
-    height: 60%;
     border: black solid;
 }
 
@@ -147,6 +147,7 @@
     "grid-name grid-img-contact"
     "grid-email grid-img-contact"
     "grid-phone grid-phone" 
+    "button-submit ."
                    
 }
 
@@ -193,9 +194,23 @@
 
 }
 
+#container-button{
+    grid-area: button-submit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-button{
+    
+}
+
 #img-contact > img{
     width: 80%;
 }
+
+
+
 
 
 
