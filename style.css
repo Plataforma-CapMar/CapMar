@@ -123,7 +123,7 @@
 #examples {
     /* background-color: var(--color-primary-blue); */
     background-color: rgb(255, 255, 255);
-    padding: 60px;
+    padding: 10px;
     flex-flow: wrap;
     gap: 15px;
 }
