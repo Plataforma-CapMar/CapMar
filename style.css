@@ -125,7 +125,6 @@
     background-color: rgb(255, 255, 255);
     padding: 10px;
     flex-flow: wrap;
-    gap: 15px;
 }
 
 .card-home-container {
