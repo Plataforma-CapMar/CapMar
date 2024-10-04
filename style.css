@@ -11,7 +11,9 @@
 
     width: 100vw;
     height: 70px;
+    z-index: 1;
 }
+
 #logo-container{
     display: flex;
     align-items: center;
@@ -57,17 +59,27 @@
 
 /* PRIMEIRA SESSÃO */
 
-#Info{
+#info{
     background-color: var(--color-primary-darkblue);
     /* background-color: #2176ae; */
 }
 .content-info-container{
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    height: 80%;
-    width: 50%;
+}
+
+.info-area-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.info-area-container:hover{
+    scale: 1.1;
+
 }
 
 .info-area-container:first-child{
@@ -79,13 +91,13 @@
     left: 100px;
 }
 
+.info-text-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
 
-.info-area-container{
-    
-}
-.info-title-container{
-    
-}
+
 .info-title{
     
     font-size: xx-large;
@@ -98,6 +110,10 @@
     color: white;
 }
 
+.cap-cell{
+ width: 20%;
+ 
+}
 
 /* SEGUNDA SESSÃO */
 
@@ -135,7 +151,7 @@
     /* background-color: #fe6847; */
 }
 .form-container{
-    background-color: #866d0d;
+    background-color: var(--color-primary-blue);
     width: 60%;
     height: 60%;
     border-radius: 20px;
@@ -143,10 +159,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
-    "grid-title-contact grid-title-contact"
+    "grid-title-contact ."
     "grid-name grid-img-contact"
     "grid-email grid-img-contact"
-    "grid-phone grid-phone" 
+    "grid-phone ." 
     "button-submit ."
                    
 }
@@ -167,6 +183,7 @@
     font-size: 20px;
     border-radius: 10px;
     width: 350px;
+    
 }
 
 #title-contact{
@@ -198,11 +215,17 @@
     grid-area: button-submit;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 30px;
 }
 
 #submit-button{
-    
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#submit-button:hover{
+    color: var(--color-primary-red);
+    background-color: var(--color-primary-blue);
 }
 
 #img-contact > img{
